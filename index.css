@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family:  'Inter', sans-serif;
+    padding: 0;
+    overflow-x: hidden;
+    color: purple;
+}
+
+a{
+    text-decoration: none;
+    color: #8EE4AF;
+}
+hr{
+    padding: 30px;
+    
+    color: purple;
+}
+.header{
+    display:flex;
+    flex-flow:row;
+    padding: 15px;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.header-logo{
+    margin-right:auto;
+    color:black;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.header-logo a{
+    color: black;
+    text-decoration:none;
+}
+
+
+.header-logo a:hover{
+    color:purple;
+
+}
+
+.header-links{
+    margin-left:auto;
+    gap:20px;
+    display:flex;
+    vertical-align: middle;
+}
+
+.header-links a{
+    margin-top:auto;
+    margin-bottom:auto;
+    cursor:pointer;
+    color: black;;
+    font-size:20px;
+    text-decoration:none;
+    padding-right: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.header-links a:hover{
+    color:purple    ;
+}
+
+.welcome{
+    display: flex;
+    background: url("welcome.svg") no-repeat ;
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+}
+
+.welcome .max-width{
+    width: 100%;
+    display: flex;
+}
+.welcome .max-width .row{
+    margin-right: 0;
+}
+.welcome  .text-1{
+    font-size: 30px;
+    padding-top: 200px;
+    padding-left: 40px;
+
+}
+.welcome  .text-2{
+    font-size: 80px;
+    font-weight: 600;
+    padding-left: 40px;
+}
+.section-container{
+    display:flex;
+    flex-flow:column;
+    gap: 60px;
+  }
+  .section-content{
+    display:flex;
+    gap:20px;
+  }
+  .section-heading{
+    margin:auto;
+  }
+
+  .section-content {
+      padding-left: 40px;
+      padding-top: 50px;
+  }
+  
+  .section-content-image{
+    width:400px;
+    height:400px;
+    padding: 30px;
+  }
+
+
+  @media screen and (max-width:600px){
+      .section-content{
+          flex-flow: column;
+margin: auto;
+      }
+      .section-container{
+          flex-flow: column;
+      }
+      .section-content-image{
+          flex-flow: column;
+          padding-left: 130px;
+          width: 400px;
+          height: 300px;
+      }
+  }
