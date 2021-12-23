@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 html{
     scroll-behavior: smooth;
 }
@@ -9,7 +9,7 @@ html{
     text-decoration: none;
 }
 body{
-    font-family:  'Inter', sans-serif;
+    font-family:  'Abel', sans-serif;
     padding: 0;
     overflow-x: hidden;
     color: purple;
@@ -32,7 +32,7 @@ hr{
     position: fixed;
     width: 100%;
     z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px, rgba(0, 0, 0, 0.3) 0px 3.5px 6.5px -1.5px, rgba(0, 0, 0, 0.2) 0px -1.5px 0px inset;
 }
 .header-logo{
     margin-right:auto;
@@ -111,24 +111,84 @@ hr{
   }
   .section-heading{
     margin:auto;
+    font-size: 50px;
   }
 
   .section-content {
       padding-left: 40px;
-      padding-top: 50px;
+      padding-top: 20px;
+      font-size: 20px;
+  }
+
+  .section-content p{
+    padding-top: 190px;
   }
   
   .section-content-image{
-    width:400px;
-    height:400px;
+      width: 500px;
+      height: 500px;
     padding: 30px;
+    
   }
 
+  .membership{
+      padding-bottom: 200px;
+  }
+  .membership h2{
+    margin:auto;
+    font-size: 50px;
+    text-align: center;
 
-  @media screen and (max-width:600px){
+  }
+
+  .card {
+    color: white;
+    box-shadow: 5px 5px purple;
+    width: calc(25% - 40px);
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    height: 180px;
+    transition: all 0.3s ease-in-out;
+  }
+  .card p {
+      text-align: center;
+      font-size: 19px;
+  }
+  .cardContainer{
+    display: flex;
+  }
+  .cardContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card:hover{
+    transform: translateY(-20px);
+
+  }
+
+  .footer{
+    background-color: purple;
+    width: 100%;
+    height: 8vh;
+    display: grid;
+    grid-gap: 50px 100px; 
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .footer p{
+      color: white;
+      text-align: center;
+  }
+  @media screen and (max-width:800px){
       .section-content{
           flex-flow: column;
-margin: auto;
+            margin: auto;
+            padding-right: 50px;
       }
       .section-container{
           flex-flow: column;
@@ -139,4 +199,22 @@ margin: auto;
           width: 400px;
           height: 300px;
       }
+
+      .card {
+        width: 90%;
+     }
+     .cardContainer{
+       flex-flow :column;
+       gap:20px
+     }
+  }
+
+  @media screen and (max-width:1000px){
+    .card {
+        width: 90%;
+     }
+     .cardContainer{
+       flex-flow :column;
+       gap:20px
+     }
   }
